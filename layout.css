@@ -1,0 +1,37 @@
+/*header styles*/
+h1 {
+  max-width: 40%;
+  display: inline-block;
+  padding-top: 120px;
+}
+
+h3 {
+  max-width: 40%;
+  display: inline-block;
+  padding-top: 10px;
+}
+
+.header-1 {
+  background-color: #FCF7FF;
+}
+
+/*image styles*/
+#headshot {
+  max-width: 20%;
+  float: right;
+  padding: 20px;
+  padding-top: 48px;
+  border-radius: 50%;
+}
+
+/*body styles*/
+
+body {
+  background-color: #DEFFDD;
+}
+
+#bio {
+  font-size: 1em;
+  font-style: italic;
+
+}
