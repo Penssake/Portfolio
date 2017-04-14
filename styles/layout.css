@@ -1,0 +1,54 @@
+/*header styles*/
+h1 {
+  max-width: 40%;
+  display: block;
+  padding-top: 120px;
+}
+
+#header-1 {
+  margin-top: 20px;
+  display: block;
+  background-color: #FCF7FF;
+}
+
+h3 {
+  max-width: 40%;
+  display: inline-block;
+  padding-top: 10px;
+}
+
+/*image styles*/
+#headshot {
+  max-width: 20%;
+  float: right;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+/*Icon styles*/
+
+#icon {
+  font-size: 1.3em;
+  float: right;
+  display: block;
+  padding: 5px;
+}
+
+#hamburger {
+  font-size: 2em;
+}
+
+#nav-list {
+  display: inline-block;
+}
+
+/*body styles*/
+
+body {
+  background-color: #DEFFDD;
+}
+
+#bio {
+  font-size: 1em;
+  font-style: italic;
+}
