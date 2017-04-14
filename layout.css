@@ -1,8 +1,14 @@
 /*header styles*/
 h1 {
   max-width: 40%;
-  display: inline-block;
+  display: block;
   padding-top: 120px;
+}
+
+#header-1 {
+  margin-top: 20px;
+  display: block;
+  background-color: #FCF7FF;
 }
 
 h3 {
@@ -11,17 +17,29 @@ h3 {
   padding-top: 10px;
 }
 
-.header-1 {
-  background-color: #FCF7FF;
-}
-
 /*image styles*/
 #headshot {
   max-width: 20%;
   float: right;
-  padding: 20px;
-  padding-top: 48px;
   border-radius: 50%;
+  display: inline-block;
+}
+
+/*Icon styles*/
+
+#icon {
+  font-size: 1.3em;
+  float: right;
+  display: block;
+  padding: 5px;
+}
+
+#hamburger {
+  font-size: 2em;
+}
+
+#nav-list {
+  display: inline-block;
 }
 
 /*body styles*/
@@ -33,5 +51,4 @@ body {
 #bio {
   font-size: 1em;
   font-style: italic;
-
 }
