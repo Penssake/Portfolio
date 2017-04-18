@@ -1,11 +1,42 @@
 /*heeder styles*/
 
 h1 {
-font-size: 2em;
-font-style: italic;
+  font-size: 2em;
+  font-style: italic;
 }
 
 h3 {
-font-size: 1em
-font-style: italic;
+  font-size: 1em
+  font-style: italic;
+}
+
+#bio {
+  width: 70%;
+  padding-left: 10px;
+  padding-top: 10px;
+}
+
+/*nav-list styles*/
+
+#nav-list li {
+  width: 90%;
+  text-align: center;
+  font-size: 2em;
+  padding: 20px;
+}
+
+#aboutList {
+  background-color: #D5D5D5;
+}
+
+#portfolioList {
+  background-color: #9099A2;
+}
+
+#blogList {
+  background-color: #6D7993;
+}
+
+#contactList {
+  background-color: #96858F;
 }

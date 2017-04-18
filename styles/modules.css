@@ -6,8 +6,16 @@
   }
 }
 
+/*For Mobile*/
+
 @media all and (min-width: 500px) {
   #hamburger {
+    display: none;
+  }
+}
+
+@media all and (max-width: 500px) {
+  #headshot {
     display: none;
   }
 }
