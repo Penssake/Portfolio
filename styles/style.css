@@ -5,21 +5,19 @@ h1 {
   font-style: italic;
 }
 
+#header-1 {
+  background-color: #F4F4F4;
+}
+
 h3 {
   font-size: 1em
   font-style: italic;
 }
 
-#bio {
-  width: 70%;
-  padding-left: 10px;
-  padding-top: 10px;
-}
-
 /*nav-list styles*/
 
 #nav-list li {
-  width: 90%;
+  width: 100%;
   text-align: center;
   font-size: 2em;
   padding: 20px;
