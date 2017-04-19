@@ -1,23 +1,23 @@
 'use strict';
 
-var dataSource = [
+var portfolioData = [
   {
-    title: 'About',
+    title: 'one',
     body: 'content1',
   },
 
   {
-    title: 'Project Portfolio',
+    title: 'two',
     body: 'content2',
   },
 
   {
-    title: 'Blog',
+    title: 'three',
     body: 'content3',
   },
 
   {
-    title: 'Contact',
+    title: 'four',
     body: 'content4',
   },
 
