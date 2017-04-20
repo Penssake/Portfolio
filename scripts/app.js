@@ -20,7 +20,7 @@ portfolioData.forEach(function(portfolioObj) {
 });
 
 portfolio.forEach(function(portfolio){
-  $('#portfolio').append(portfolio.toHtml());
+  $('body').append(portfolio.toHtml('#portfolio'));
   console.log('anything');
 });
 
