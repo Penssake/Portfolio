@@ -1,5 +1,7 @@
 'use strict';
 
+// Reviewed by Jim, 20 APR 17
+
 var portfolio = [];
 
 function Portfolio (portfolioDataObj) {
