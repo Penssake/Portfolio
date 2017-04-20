@@ -10,9 +10,13 @@ h1 {
   display: block;
 }
 
+#header-2 {
+  display: block;
+}
+
 h3 {
   max-width: 40%;
-  display: inline-block;
+  display: block;
   padding-top: 10px;
 }
 

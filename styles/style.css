@@ -5,24 +5,13 @@ h1 {
   font-style: italic;
 }
 
-#header-1 {
+header {
   background-color: #F4F4F4;
 }
 
 h3 {
   font-size: 1em
   font-style: italic;
-}
-
-/*nav-list styles*/
-
-#nav-list li {
-  width: 100%;
-  text-align: center;
-  font-size: 2em;
-  padding: 20px;
-  margin-top: 10px;
-
 }
 
 #nav-list a {

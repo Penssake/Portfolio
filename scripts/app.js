@@ -1,22 +1,55 @@
 'use strict';
 
-var image_path = 'image/';
+var portfolio = [];
 
-function displayImages(name, images) {
-  this.name = name;
-  this.images = images;
+function Portfolio (portfolioDataObj) {
+  this.title = portfolioDataObj.title;
+  this.body = portfolioDataObj.body;
 }
 
-var firstImage = new displayImages('Blog', 'blog.jpg');
-console.log(firstImage);
-var secondImage = new displayImages('Portfolio', 'portfolio.jpg');
-console.log(secondImage);
+Portfolio.prototype.toHtml = function() {
+  var theTemplate = $('#page-article').html();
+  var renderPortfolio = Handlebars.compile(theTemplate);
+
+  return renderPortfolio(this);
+};
+
+portfolioData.forEach(function(portfolioObj) {
+  portfolio.push(new Portfolio(portfolioObj));
+  console.log(portfolioObj);
+});
+
+portfolio.forEach(function(portfolio){
+  $('#portfolio').append(portfolio.toHtml());
+  console.log('anything');
+});
+
+//Animations for hamburger and Nav-list.
+// $('#headShotBounce').on('load', function(){
+//   $('#headShotBounce').animate({ margin-top: '0px'});
+// });
 
 $('#hamburger').on('click', function(){
   $('#nav-list').show();
 });
 
-$('#nav-list li').hover( function(){
-  $('li').animate({ marginLeft: '10px' }, 400);
-  $('li').stop().animate({ marginLeft: '0px' });
+$('#aboutList').hover( function(){
+  $('#aboutList').animate({ marginLeft: '10px'}, 200);
+  $('#aboutList').animate({ marginLeft: '10px'}, 200);
+  $('#aboutList').animate({ marginLeft: '0px' }, 200);
+});
+
+$('#portfolioList').hover( function(){
+  $('#portfolioList').animate({ margin: '10px' }, 200);
+  $('#portfolioList').animate({ margin: '0px' }, 200);
+});
+
+$('#blogList').hover( function(){
+  $('#blogList').animate({ margin: '10px' }, 200);
+  $('#blogList').animate({ margin: '0px' }, 200);
+});
+
+$('#contactList').hover( function(){
+  $('#contactList').animate({ margin: '10px' }, 200);
+  $('#contactList').animate({ margin: '0px' }, 200);
 });
