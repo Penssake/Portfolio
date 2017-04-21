@@ -1,12 +1,12 @@
 'use strict';
 
-// Reviewed by Jim, 20 APR 17
-
 var portfolio = [];
+var imagePath = '/images';
 
 function Portfolio (portfolioDataObj) {
   this.title = portfolioDataObj.title;
   this.body = portfolioDataObj.body;
+  this.img = portfolioDataObj.img;
 }
 
 Portfolio.prototype.toHtml = function() {
@@ -37,21 +37,40 @@ $('#hamburger').on('click', function(){
 
 $('#aboutList').hover( function(){
   $('#aboutList').animate({ marginLeft: '10px'}, 200);
-  $('#aboutList').animate({ marginLeft: '10px'}, 200);
   $('#aboutList').animate({ marginLeft: '0px' }, 200);
 });
 
+$('#aboutList').on('click', function(){
+  $('#aboutList').animate({ width: '100%'});
+  $('#aboutList').animate({ borderRadius: '0%'});
+});
+
 $('#portfolioList').hover( function(){
-  $('#portfolioList').animate({ margin: '10px' }, 200);
-  $('#portfolioList').animate({ margin: '0px' }, 200);
+  $('#portfolioList').animate({ marginLeft: '10px' }, 200);
+  $('#portfolioList').animate({ marginLeft: '0px' }, 200);
+});
+
+$('#portfolioList').on('click', function(){
+  $('#portfolioList').animate({ width: '100%'});
+  $('#portfolioList').animate({ borderRadius: '0%'});
 });
 
 $('#blogList').hover( function(){
-  $('#blogList').animate({ margin: '10px' }, 200);
-  $('#blogList').animate({ margin: '0px' }, 200);
+  $('#blogList').animate({ marginLeft: '10px' }, 200);
+  $('#blogList').animate({ marginLeft: '0px' }, 200);
+});
+
+$('#blogList').on('click', function(){
+  $('#blogList').animate({ width: '100%'});
+  $('#blogList').animate({ borderRadius: '0%'});
 });
 
 $('#contactList').hover( function(){
-  $('#contactList').animate({ margin: '10px' }, 200);
-  $('#contactList').animate({ margin: '0px' }, 200);
+  $('#contactList').animate({ marginLeft: '10px' }, 200);
+  $('#contactList').animate({ marginLeft: '0px' }, 200);
+});
+
+$('#contactList').on('click', function(){
+  $('#contactList').animate({ width: '100%'});
+  $('#contactList').animate({ borderRadius: '0%'});
 });
