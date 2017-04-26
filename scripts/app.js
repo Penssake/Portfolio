@@ -1,6 +1,7 @@
 'use strict';
 
 var portfolio = [];
+var articleSection = [];
 var imagePath = '/images';
 
 function Portfolio (portfolioDataObj) {
@@ -12,17 +13,17 @@ function Portfolio (portfolioDataObj) {
 Portfolio.prototype.toHtml = function() {
   var theTemplate = $('#page-article').html();
   var renderPortfolio = Handlebars.compile(theTemplate);
-
   return renderPortfolio(this);
 };
 
-portfolioData.forEach(function(portfolioObj) {
+portfolioDataObj.forEach(function(portfolioObj) {
   portfolio.push(new Portfolio(portfolioObj));
   console.log(portfolioObj);
 });
 
 portfolio.forEach(function(portfolio){
-  $('body').append(portfolio.toHtml('#portfolio'));
+  articleSection.push('portfolio');
+  $('body').append(articleSection.toHtml('#pageArticleSection'));
   console.log('anything');
 });
 
