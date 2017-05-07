@@ -11,22 +11,22 @@ function Portfolio (portfoliosDataObj) {
 Portfolio.prototype.toHtml = function() {
   var renderPortfolios = Handlebars.compile($('#portfolio-template').text());
   return renderPortfolios(this);
-  console.log(this);
 };
 
 $.getJSON('/data/portfolios.json', function(portfolios) {
   portfolios.forEach(function(portfoliosDataObject) {
     var portfolio = new Portfolio(portfoliosDataObject);
-    portfolioArray.push(portfolios);
-    console.log(portfolios);
+    portfolioArray.push(portfolio);
+    print();
   });
 });
 
 function print () {
+  if(portfolioArray.length > 0)
+    $('#portfolioSection').empty();
   portfolioArray.forEach(function(data) {
     $('#portfolioSection').append(data.toHtml());
   });
 }
 
 Portfolio();
-print();
