@@ -1,32 +1,22 @@
 'use strict';
+(function(module) {
 
-var portfolioArray = [];
-
-function Portfolio (portfoliosDataObj) {
-  this.title = portfoliosDataObj.title;
-  this.body = portfoliosDataObj.body;
-  this.img = portfoliosDataObj.img;
+function Portfolio (portfoliosData) {
+Object.keys(portfoliosData).forEach(key => this [key] = portfoliosData[key]);
 }
 
+Portfolio.all = [];
+
 Portfolio.prototype.toHtml = function() {
-  var renderPortfolios = Handlebars.compile($('#portfolio-template').text());
+  let renderPortfolios = Handlebars.compile($('#portfolio-template').text());
   return renderPortfolios(this);
 };
 
-$.getJSON('/data/portfolios.json', function(portfolios) {
-  portfolios.forEach(function(portfoliosDataObject) {
-    var portfolio = new Portfolio(portfoliosDataObject);
-    portfolioArray.push(portfolio);
-    print();
+$.getJSON('/data/portfolios.json', function(portfoliosData) {
+  portfoliosData.forEach(function(portfoliosObject) {
+    let portfolio = new Portfolio(portfoliosObject);
+    $('#portfolioSection').append(portfolio.toHtml());
   });
 });
 
-function print () {
-  if(portfolioArray.length > 0)
-    $('#portfolioSection').empty();
-  portfolioArray.forEach(function(data) {
-    $('#portfolioSection').append(data.toHtml());
-  });
-}
-
-Portfolio();
+})(window);

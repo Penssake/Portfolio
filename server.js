@@ -1,13 +1,13 @@
 'use strict';
 
-var express = require('express');
-var fs = require('fs');
-var bodyParser = require('body-parser');
-var pg = require('pg');
-var app = express();
+const express = require('express');
+const fs = require('fs');
+const bodyParser = require('body-parser');
+const pg = require('pg');
+const app = express();
 PORT = process.env.PORT || 5000;
 
-var conString = 'postgres://postgres:postgres@localhost:5433';
+const conString = 'postgres://postgres:postgres@localhost:5433';
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
