@@ -1,31 +1,32 @@
 'use strict';
 
-function Portfolio (portfolioDataObj) {
-  this.title = portfolioDataObj.title;
-  this.body = portfolioDataObj.body;
-  this.img = portfolioDataObj.img;
+var portfolioArray = [];
+
+function Portfolio (portfoliosDataObj) {
+  this.title = portfoliosDataObj.title;
+  this.body = portfoliosDataObj.body;
+  this.img = portfoliosDataObj.img;
 }
 
 Portfolio.prototype.toHtml = function() {
-  var theTemplate = $('#page-article').html();
-  var renderPortfolio = Handlebars.compile(theTemplate);
-  return theTemplate(this);
+  var renderPortfolios = Handlebars.compile($('#portfolio-template').text());
+  return renderPortfolios(this);
+  console.log(this);
 };
 
-$.getJSON('./data/dataSource.json', function(dataSource) {
-  dataSource.forEach(function(portfolioObject) {
-    var portfolio = new Portfolio(portfolioObject);
-    $('#portfolio').append(portfolio.toHtml());
+$.getJSON('/data/portfolios.json', function(portfolios) {
+  portfolios.forEach(function(portfoliosDataObject) {
+    var portfolio = new Portfolio(portfoliosDataObject);
+    portfolioArray.push(portfolios);
+    console.log(portfolios);
   });
 });
 
-portfolio.fetchAll = function() {
-  if(localStorage.portfolioData) {
-    Portfolio.loadAll(JSON.parse(localStorage.portfolioData));
-  }else{
-    $.getJSON('/data/dataSource.json').then(function(portfolioDataObj){
-      Portfolio.loadAll(portfolioDataObj);
-      console.log(portfolioDataObj);
-    });
-  }
-};
+function print () {
+  portfolioArray.forEach(function(data) {
+    $('#portfolioSection').append(data.toHtml());
+  });
+}
+
+Portfolio();
+print();
