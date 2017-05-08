@@ -13,7 +13,7 @@ Portfolio.prototype.toHtml = function() {
 };
 
 $.getJSON('/data/portfolios.json', function(portfoliosData) {
-  portfoliosData.forEach(function(portfoliosObject) {
+  portfoliosData.map(function(portfoliosObject) {
     let portfolio = new Portfolio(portfoliosObject);
     $('#portfolioSection').append(portfolio.toHtml());
   });
