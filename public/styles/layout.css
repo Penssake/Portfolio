@@ -1,0 +1,51 @@
+/*header styles*/
+h1 {
+  max-width: 40%;
+  display: block;
+  padding-top: 120px;
+}
+
+#header-1 {
+  margin-top: 20px;
+  display: block;
+}
+
+#header-2 {
+  display: block;
+}
+
+h3 {
+  max-width: 40%;
+  display: block;
+  padding-top: 10px;
+}
+
+/*image styles*/
+#headshot {
+  max-width: 10%;
+  border-radius: 50%;
+}
+
+/*Icon styles*/
+
+#icon {
+  font-size: 1.3em;
+  float: right;
+  display: block;
+  padding: 5px;
+}
+
+#hamburger {
+  font-size: 2em;
+}
+
+/*body styles*/
+
+body {
+  background-color: #DEFFDD;
+}
+
+#bio {
+  font-size: 1em;
+  font-style: italic;
+}

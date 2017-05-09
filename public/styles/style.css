@@ -1,0 +1,35 @@
+/*heeder styles*/
+
+h1 {
+  font-size: 2em;
+  font-style: italic;
+}
+
+header {
+  background-color: #F4F4F4;
+}
+
+h3 {
+  font-size: 1em
+  font-style: italic;
+}
+
+#nav-list a {
+  text-decoration: none;
+}
+
+#aboutList {
+  background-color: #D5D5D5;
+}
+
+#portfolioList {
+  background-color: #9099A2;
+}
+
+#blogList {
+  background-color: #6D7993;
+}
+
+#contactList {
+  background-color: #96858F;
+}
