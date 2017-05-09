@@ -9,7 +9,7 @@ const app = express();
 app.use(express.static('./public'));
 // const conString = 'postgres://postgres:postgres@localhost:5433';
 app.get('*', (req, res) => {
-  res.sendFile('index.html', { root: './public' });
+  res.sendFile('/index.html', { root: './public' });
 });
 
 // app.get('/about', (request, response) => {
