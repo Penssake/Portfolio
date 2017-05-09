@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="public/styles/reset.css" />
+  <link rel="stylesheet" href="public/styles/layout.css" />
+  <link rel="stylesheet" href="public/styles/style.css" />
+  <link rel="stylesheet" href="public/styles/modules.css" />
+  <script src="https://use.fontawesome.com/fe52cfc17e.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <script src="https://cdn.rawgit.com/visionmedia/page.js/master/page.js"></script>
+  <script id="portfolio-template" type="text/x-handlebars-template">
+    <h1>{{title}}</h1>
+    {{body}}
+    <img src= '{{imgURL}} '/>
+  </script>
+</head>
+
+<body>
+  <header>
+    <img id="headshot" src="images/christinaHead.jpg" />
+    <section id="header-1">
+      <h1>Christina Thomas</h1>
+      <h3>Professional Portfolio & Blog</h3>
+      <a href="#"><i id="icon" class="fa fa-linkedin" aria-hidden="true"></i></a>
+      <a href="#"><i id="icon"class="fa fa-medium" aria-hidden="true"></i></a> <a href="#"><i id="icon" class="fa fa-github" aria-hidden="true"></i></a>
+    </section>
+  </header>
+
+  <section id="header-3">
+    <ul id="nav-list">
+      <li id="aboutList"><a href="/">About</a></li>
+      <li id="portfolioList"><a href="/portfolio">Portfolio</a></li>
+      <li id="blogList"><a href="/blog">Blog</a></li>
+      <li id="contactList"><a href="/contact">Contact</a></li>
+    </ul>
+  </section>
+
+  <main>
+  <div id="hamburgerClick"><i id="hamburger" class="fa fa-bars" aria-hidden="true"></i></div>
+    <div id="about"></div>
+    <div id="portfolio"></div>
+    <div id="blog"></div>
+    <div id="contact"></div>
+  </main>
+
+  <script src="server.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.4/handlebars.js"></script>
+
+  <script type="text/javascript" src="public/scripts/views/app.js"></script>
+  <script type="text/javascript" src="public/scripts/views/data.js"></script>
+
+  <script src="public/scripts/controllers/aboutController.js"></script>
+  <script src="public/scripts/controllers/blogController.js"></script>
+  <script src="public/scripts/controllers/contactController.js"></script>
+  <script src="public/scripts/controllers/portfolioController.js"></script>
+  <script src="public/scripts/controllers/routes.js"></script>
+
+</body>
+</html>
