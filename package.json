@@ -2,7 +2,7 @@
   "name": "portfolio",
   "version": "1.0.0",
   "description": "_ https://www.sitepoint.com/pure-css-off-screen-navigation-menu/ _\r _ https://www.w3schools.com/howto/howto_css_menu_icon.asp _",
-  "main": "index.js",
+  "main": "server.js",
   "dependencies": {
     "body-parser": "^1.17.1",
     "express": "^4.15.2",
