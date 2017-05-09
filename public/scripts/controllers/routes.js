@@ -1,8 +1,8 @@
 'use strict';
 
-page('/', about);
-page('/portfolio', portfolio);
-page('/blog', blog);
-page('/contact', contact);
+page('/', aboutController.show);
+page('/portfolio', portfolioController.show);
+page('/blog', blogController.show);
+page('/contact', contactController.show);
 
 page();

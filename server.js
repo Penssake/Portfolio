@@ -7,14 +7,10 @@ const bodyParser = require('body-parser');
 const PORT = process.env.PORT || 5000;
 const app = express();
 app.use(express.static('./public'));
-// const conString = 'postgres://postgres:postgres@localhost:5433';
+
 app.get('*', (req, res) => {
   res.sendFile('/index.html', { root: './public' });
 });
-
-// app.get('/about', (request, response) => {
-//   response.sendFile('index.html', { root: './public'})
-// })
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
