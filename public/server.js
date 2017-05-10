@@ -6,10 +6,10 @@ const pg = require('pg');
 const bodyParser = require('body-parser');
 const PORT = process.env.PORT || 5000;
 const app = express();
-app.use(express.static('./public'));
+app.use(express.static('/public'));
 
 app.get('*', (req, res) => {
-  res.sendFile('/index.html', { root: './public' });
+  res.sendFile('index.html', { root: './public' });
 });
 
 app.use(bodyParser.json());

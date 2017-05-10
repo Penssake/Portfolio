@@ -3,7 +3,7 @@
 (function(module) {
   const blogController = {};
   blogController.show = function() {
-    $('.tab-content').hide();
+    $('.main').hide();
     $('#blog').fadeIn();
   };
   module.blogController = blogController;

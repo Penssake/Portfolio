@@ -3,12 +3,11 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="/styles/reset.css" />
-  <link rel="stylesheet" href="/styles/layout.css" />
-  <link rel="stylesheet" href="/styles/style.css" />
-  <link rel="stylesheet" href="/styles/modules.css" />
+  <link rel="stylesheet" href="public/styles/reset.css" />
+  <link rel="stylesheet" href="public/styles/layout.css" />
+  <link rel="stylesheet" href="public/styles/style.css" />
+  <link rel="stylesheet" href="public/styles/modules.css" />
   <script src="https://use.fontawesome.com/fe52cfc17e.js"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
   <script src="https://cdn.rawgit.com/visionmedia/page.js/master/page.js"></script>
   <script id="portfolio-template" type="text/x-handlebars-template">
     <h1>{{title}}</h1>
@@ -43,19 +42,23 @@
     <div id="portfolio"></div>
     <div id="blog"></div>
     <div id="contact"></div>
+    <div id="gitHubResults"></div>
   </main>
 
   <script src="server.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.4/handlebars.js"></script>
+  <script scr="models/gitHubToken.js"></script>
+  <script scr="models/gitHubRepo.js"></script>
 
-  <script src="/scripts/views/app.js"></script>
-  <script src="/scripts/views/data.js"></script>
+  <script type="text/javascript" src="public/scripts/views/app.js"></script>
+  <script type="text/javascript" src="public/scripts/views/data.js"></script>
 
-  <script src="/scripts/controllers/aboutController.js"></script>
-  <script src="/scripts/controllers/blogController.js"></script>
-  <script src="/scripts/controllers/contactController.js"></script>
-  <script src="/scripts/controllers/portfolioController.js"></script>
-  <script src="/scripts/controllers/routes.js"></script>
+  <script src="public/scripts/controllers/aboutController.js"></script>
+  <script src="public/scripts/controllers/blogController.js"></script>
+  <script src="public/scripts/controllers/contactController.js"></script>
+  <script src="public/scripts/controllers/portfolioController.js"></script>
+  <script src="public/scripts/controllers/routes.js"></script>
 
 </body>
 </html>

@@ -21,4 +21,5 @@ $.getJSON('/data/portfolios.json', function(portfoliosData) {
 });
 
 })(window);
+
 //COMMENT FOR COMMIT

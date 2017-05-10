@@ -1,20 +1,21 @@
 [{
-  "title": "CodeFellows/Code201",
-  "body": "content1",
-  "img": ""
+  "title": "Abstraction",
+  "body": "Oil on Canvas",
+  "img": "/images/abstraction.jpg"
 },
 {
-  "title": "CodeFellows/Code301",
-  "body": ""
+  "title": "Forrest Road",
+  "body": "Acrylic on Canvas",
+  "body": "/images/forrestFire.jpg"
 },
 {
-  "title": "Upcoming Projects/Other interest",
-  "body": "<hr> Guatemala: Living with a host family for the month of June. Working towards the goal to connect consumers with farms that promote environmentally friendly farming. <hr> Washington State: Continuing project in environmentally friendly farming on local farm. This will include learning about what is being done to bring local nonGMO products to low-income families.",
-  "img": "/images/blog.jpg"
+  "title": "First",
+  "body": "Oil on Canvas",
+  "img": "/images/first.jpg"
 
 },
 {
-  "title": "Illustrations",
-  "body": "content3",
+  "title": "Ours",
+  "body": "Acrylic on Canvas",
   "img": "/images/portfolio.png"
 }]
