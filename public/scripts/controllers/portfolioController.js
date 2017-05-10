@@ -3,7 +3,7 @@
 (function(module) {
   const portfolioController = {};
   portfolioController.show = function() {
-    $('.tab-content').hide();
+    $('.main').hide();
     $('#portfolio').fadeIn();
   };
 })(window);

@@ -1,20 +1,21 @@
 [{
-  "title": "First",
-  "body": "Oil on canvas",
-  "img": "images/illu1.jpg"
-},
-{
   "title": "Abstraction",
-  "body": "Acrylic on cavas"
+  "body": "Oil on Canvas",
+  "img": "/images/abstraction.jpg"
 },
 {
-  "title": "Ours",
-  "body": "Acrylic on canvas",
-  "img": "/images/blog.jpg"
+  "title": "Forrest Road",
+  "body": "Acrylic on Canvas",
+  "body": "/images/forrestFire.jpg"
+},
+{
+  "title": "First",
+  "body": "Oil on Canvas",
+  "img": "/images/first.jpg"
 
 },
 {
-  "title": "Illustrations",
-  "body": "content3",
+  "title": "Ours",
+  "body": "Acrylic on Canvas",
   "img": "/images/portfolio.png"
 }]
