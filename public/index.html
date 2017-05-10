@@ -14,6 +14,20 @@
     {{body}}
     <img src= '{{imgURL}} '/>
   </script>
+
+  <script id="repo-template" type="text/x-handlebars-template">
+    <li>
+    <a href="{{html_url}}" target="_blank"><h3>{{name}}</h3></a>
+     <p>Description: {{description}}</p>
+     <p>Language: {{language}}</p>
+     <p>Created: {{created_at}}</p>
+     <p>Last updated: {{updated_at}}</p>
+    {{#if watchers_count}}
+      <p>{{watchers_count}} watching this repo</p>
+    {{/if}}
+  </li>
+  </script>
+
 </head>
 
 <body>
@@ -48,11 +62,16 @@
   <script src="server.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.4/handlebars.js"></script>
+
   <script scr="models/gitHubToken.js"></script>
   <script scr="models/gitHubRepo.js"></script>
 
-  <script type="text/javascript" src="public/scripts/views/app.js"></script>
-  <script type="text/javascript" src="public/scripts/views/data.js"></script>
+  <script src="/scripts/models/gitHubToken.js"></script>
+  <script src="/scripts/models/gitHub.js"></script>
+
+  <script src="/scripts/views/repoview.js"></script>
+  <script src="/scripts/views/app.js"></script>
+  <script src="/scripts/views/data.js"></script>
 
   <script src="public/scripts/controllers/aboutController.js"></script>
   <script src="public/scripts/controllers/blogController.js"></script>

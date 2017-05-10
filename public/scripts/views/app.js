@@ -16,7 +16,7 @@ Portfolio.prototype.toHtml = function() {
 $.getJSON('/data/portfolios.json', function(portfoliosData) {
   portfoliosData.map(function(portfoliosObject) {
     let portfolio = new Portfolio(portfoliosObject);
-    $('#portfolio').append(portfolio.toHtml());
+    $('#blog').append(portfolio.toHtml());
   });
 });
 
