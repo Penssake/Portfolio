@@ -10,10 +10,16 @@
   <script src="https://use.fontawesome.com/fe52cfc17e.js"></script>
   <script src="https://cdn.rawgit.com/visionmedia/page.js/master/page.js"></script>
   <script id="portfolio-template" type="text/x-handlebars-template">
-    <h1>{{title}}</h1>
-    {{body}}
-    <img src= '{{imgURL}} '/>
-  </script>
+			<div class="">
+				<img id="blogImages" src="{{img}}">
+			</div>
+			<div class="">
+				<h3>{{title}}</h3>
+				<p>{{body}}</p>
+			</div>
+			</div>
+			<div class=""></div>
+		</script>
 
   <script id="repo-template" type="text/x-handlebars-template">
     <li>
@@ -44,10 +50,10 @@
 
   <section id="header-3">
     <ul id="nav-list">
-      <li id="aboutList"><a href="/">About</a></li>
-      <li id="portfolioList"><a href="/portfolio">Portfolio</a></li>
-      <li id="blogList"><a href="/blog">Blog</a></li>
-      <li id="contactList"><a href="/contact">Contact</a></li>
+      <li id="aboutList"><a href="#">About</a></li>
+      <li id="portfolioList"><a href="#">Portfolio</a></li>
+      <li id="blogList"><a href="#">Blog</a></li>
+      <li id="contactList"><a href="#">Contact</a></li>
     </ul>
   </section>
 
@@ -55,7 +61,15 @@
   <div id="hamburgerClick"><i id="hamburger" class="fa fa-bars" aria-hidden="true"></i></div>
     <div id="about"></div>
     <div id="portfolio"></div>
-    <div id="blog"></div>
+    <div id="imageControl">
+      <img class ="imagesPort" src="./images/abstraction.jpeg"/>
+      <img class ="imagesPort" src="./images/forrestFire.jpg"/>
+      <img class ="imagesPort" src="./images/first.jpg"/>
+      <img class ="imagesPort" src="./images/potfolio.png"/>
+    </div>
+    <div id="blog">
+
+    </div>
     <div id="contact"></div>
     <div id="gitHubResults"></div>
   </main>

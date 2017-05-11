@@ -18,6 +18,7 @@ $.getJSON('/data/portfolios.json', function(portfoliosData) {
     let portfolio = new Portfolio(portfoliosObject);
     $('#blog').append(portfolio.toHtml());
   });
+
 });
 
 })(window);
