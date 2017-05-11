@@ -2,7 +2,10 @@
 
 ### Professional portfolio to showcase projects.
 
+### Heroku
+https://portfolio-display.herokuapp.com/
+
 
 ## Works Cited
-_ https://www.sitepoint.com/pure-css-off-screen-navigation-menu/ _
-_ https://www.w3schools.com/howto/howto_css_menu_icon.asp _
+https://www.sitepoint.com/pure-css-off-screen-navigation-menu/
+https://www.w3schools.com/howto/howto_css_menu_icon.asp
