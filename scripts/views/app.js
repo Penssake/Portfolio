@@ -1,4 +1,5 @@
 'use strict';
+
 (function(module) {
 
 function Portfolio (portfoliosData) {
@@ -15,7 +16,7 @@ Portfolio.prototype.toHtml = function() {
 $.getJSON('/data/portfolios.json', function(portfoliosData) {
   portfoliosData.map(function(portfoliosObject) {
     let portfolio = new Portfolio(portfoliosObject);
-    $('#portfolioSection').append(portfolio.toHtml());
+    $('#portfolio').append(portfolio.toHtml());
   });
 });
 
