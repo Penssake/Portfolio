@@ -9,7 +9,7 @@ Object.keys(portfoliosData).forEach(key => this [key] = portfoliosData[key]);
 Portfolio.all = [];
 
 Portfolio.prototype.toHtml = function() {
-  let renderPortfolios = Handlebars.compile($('#portfolio-template').text());
+  let renderPortfolios = Handlebars.compile($('#resume-template').text());
   return renderPortfolios(this);
 };
 

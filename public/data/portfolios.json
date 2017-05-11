@@ -1,21 +1,15 @@
 [{
-  "img": "",
-  "title": "Abstraction",
-  "body": "Oil on Canvas"
-},
-{
-  "img": "",
-  "title": "Forrest Road",
-  "body": "Acrylic on Canvas"
-},
-{
-  "img": "",
-  "title": "First",
-  "body": "Oil on Canvas"
 
+  "title": "CodeFellows",
+  "body": "Hands-on development academy. Students work on development teams where they apply their training towards web and app development. Currently entering into the advanced-level classes that specialize in full-stack, mobile, or backend development."
 },
 {
-  "img": "",
-  "title": "Ours",
-  "body": "Acrylic on Canvas"
+
+  "title": "Academy of Art",
+  "body": "Skilled professional painter with a strong grasp on a diverse collection of mediums, techniques and tools."
+},
+{
+
+  "title": "Bartender",
+  "body": "I make a damn good drink."
 }]

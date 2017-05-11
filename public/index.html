@@ -7,90 +7,85 @@
   <link rel="stylesheet" href="public/styles/layout.css" />
   <link rel="stylesheet" href="public/styles/style.css" />
   <link rel="stylesheet" href="public/styles/modules.css" />
+  <link rel="stylsheet" href="public/scripts/tinyC.css" />
   <script src="https://use.fontawesome.com/fe52cfc17e.js"></script>
   <script src="https://cdn.rawgit.com/visionmedia/page.js/master/page.js"></script>
-  <script id="portfolio-template" type="text/x-handlebars-template">
-			<div class="">
-				<img id="blogImages" src="{{img}}">
-			</div>
-			<div class="">
-				<h3>{{title}}</h3>
-				<p>{{body}}</p>
-			</div>
-			</div>
-			<div class=""></div>
-		</script>
+  <script id="resume-template" type="text/x-handlebars-template">
+    <div class="">
+      <h3 id="title">{{title}}</h3>
+      <p id="body">{{body}}</p>
 
-  <script id="repo-template" type="text/x-handlebars-template">
-    <li>
-    <a href="{{html_url}}" target="_blank"><h3>{{name}}</h3></a>
-     <p>Description: {{description}}</p>
-     <p>Language: {{language}}</p>
-     <p>Created: {{created_at}}</p>
-     <p>Last updated: {{updated_at}}</p>
-    {{#if watchers_count}}
-      <p>{{watchers_count}} watching this repo</p>
-    {{/if}}
-  </li>
-  </script>
+    </script>
 
-</head>
+    <script id="repo-template" type="text/x-handlebars-template">
+      <li>
+        <a href="{{html_url}}" target="_blank"><h3>{{name}}</h3></a>
+        <p>Description: {{description}}</p>
+        <p>Language: {{language}}</p>
+        <p>Created: {{created_at}}</p>
+        <p>Last updated: {{updated_at}}</p>
+        {{#if watchers_count}}
+        <p>{{watchers_count}} watching this repo</p>
+        {{/if}}
+      </li>
+    </script>
 
-<body>
-  <header>
-    <img id="headshot" src="images/christinaHead.jpg" />
-    <section id="header-1">
-      <h1>Christina Thomas</h1>
-      <h3>Professional Portfolio & Blog</h3>
-      <a href="#"><i id="icon" class="fa fa-linkedin" aria-hidden="true"></i></a>
-      <a href="#"><i id="icon"class="fa fa-medium" aria-hidden="true"></i></a>
-      <a href="#"><i id="icon" class="fa fa-github" aria-hidden="true"></i></a>
+  </head>
+
+  <body>
+    <header>
+      <img id="headshot" src="images/christinaHead.jpg" />
+      <section id="header-1">
+        <h1>Christina Thomas</h1>
+        <h3>Professional Portfolio & Blog</h3>
+        <a href="#"><i id="icon" class="fa fa-linkedin" aria-hidden="true"></i></a>
+        <a href="#"><i id="icon"class="fa fa-medium" aria-hidden="true"></i></a>
+        <a href="#"><i id="icon" class="fa fa-github" aria-hidden="true"></i></a>
+      </section>
+    </header>
+
+    <section id="header-3">
+      <ul id="nav-list">
+        <li id="aboutList"><a href="#">About</a></li>
+        <li id="portfolioList"><a href="#">Portfolio</a></li>
+        <li id="blogList"><a href="#">Blog</a></li>
+        <li id="contactList"><a href="#">Contact</a></li>
+      </ul>
     </section>
-  </header>
 
-  <section id="header-3">
-    <ul id="nav-list">
-      <li id="aboutList"><a href="#">About</a></li>
-      <li id="portfolioList"><a href="#">Portfolio</a></li>
-      <li id="blogList"><a href="#">Blog</a></li>
-      <li id="contactList"><a href="#">Contact</a></li>
-    </ul>
-  </section>
+    <main>
+      <div id="hamburgerClick"><i id="hamburger" class="fa fa-bars" aria-hidden="true"></i></div>
+      <div id="about"></div>
+      <div id="portfolio"></div>
 
-  <main>
-  <div id="hamburgerClick"><i id="hamburger" class="fa fa-bars" aria-hidden="true"></i></div>
-    <div id="about"></div>
-    <div id="portfolio"></div>
-    <div id="imageControl">
-      <img class ="imagesPort" src="./images/abstraction.jpeg"/>
-      <img class ="imagesPort" src="./images/forrestFire.jpg"/>
-      <img class ="imagesPort" src="./images/first.jpg"/>
-      <img class ="imagesPort" src="./images/potfolio.png"/>
-    </div>
-    <div id="blog">
+      <div id="blog">
+      </div>
+      <div id="contact"></div>
+      <div id="gitHubResults"></div>
+      <div class="overview">
+        <img class ="imagesInPort" src="./images/abstraction.jpeg"/>
+        <img class ="imagesInPort" src="./images/forrestFire.jpg"/>
+        <img class ="imagesInPort" src="./images/potfolio.png"/>
+      </div>
+    </main>
 
-    </div>
-    <div id="contact"></div>
-    <div id="gitHubResults"></div>
-  </main>
+    <script src="server.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.4/handlebars.js"></script>
 
-  <script src="server.js"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.4/handlebars.js"></script>
+    <script scr="public/scripts/models/gitHubRepo.js"></script>
+    <script src="public/scripts/models/gitHubToken.js"></script>
+    <script src="public/scripts/models/gitHub.js"></script>
 
-  <script scr="public/scripts/models/gitHubRepo.js"></script>
-  <script src="public/scripts/models/gitHubToken.js"></script>
-  <script src="public/scripts/models/gitHub.js"></script>
+    <script src="/public/scripts/views/repoview.js"></script>
+    <script src="public/scripts/views/app.js"></script>
+    <script src="public/scripts/views/data.js"></script>
 
-  <script src="/public/scripts/views/repoview.js"></script>
-  <script src="public/scripts/views/app.js"></script>
-  <script src="public/scripts/views/data.js"></script>
+    <script src="public/scripts/controllers/aboutController.js"></script>
+    <script src="public/scripts/controllers/blogController.js"></script>
+    <script src="public/scripts/controllers/contactController.js"></script>
+    <script src="public/scripts/controllers/portfolioController.js"></script>
+    <script src="public/scripts/controllers/routes.js"></script>
 
-  <script src="public/scripts/controllers/aboutController.js"></script>
-  <script src="public/scripts/controllers/blogController.js"></script>
-  <script src="public/scripts/controllers/contactController.js"></script>
-  <script src="public/scripts/controllers/portfolioController.js"></script>
-  <script src="public/scripts/controllers/routes.js"></script>
-
-</body>
-</html>
+  </body>
+  </html>

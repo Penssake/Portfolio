@@ -14,9 +14,13 @@ h3 {
   font-style: italic;
 }
 
-.imagesPort {
-  width: 30%;
-  display: block;
+.imagesInPort {
+  width: 20%;
+  clear: right;
+  float: left;
+  margin-top: 30px;
+  margin-left: 20px;
+  border-radius: 20%;
 
 }
 
@@ -38,4 +42,9 @@ h3 {
 
 #contactList {
   background-color: #96858F;
+}
+
+#title {
+  margin: 10px;
+  font-size: 2em;
 }
