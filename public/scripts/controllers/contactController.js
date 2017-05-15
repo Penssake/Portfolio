@@ -1,10 +1,9 @@
 'use strict';
 
 (function(module) {
-  const contactController = {};
-  contactController.show = function() {
-    $('#contact').siblings().hide();
-    $('#contact').fadeIn();
-  };
-  module.contactController = contactController;
+  // const contactController = {};
+  // blogController.index = function() {
+  //   $('main').css('display', 'none')
+  //   $('#blog').show();
+  // module.contactController = contactController;
 })(window);

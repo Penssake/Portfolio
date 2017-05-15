@@ -1,4 +1,4 @@
-/*For desktop*/
+1/*For desktop*/
 
 @media all and (max-width: 500px) {
   #nav-list {
@@ -12,19 +12,14 @@
   #hamburger {
     display: none;
   } #nav-list li {
-  width: 70px;
+  width: 100%;
   text-align: center;
   font-size: 1.3em;
   padding: 20px;
   display: inline-block;
   margin-top: 10px;
   margin-left: 10px;
-  -webkit-border-radius:  50%;
-  -moz-border-radius:  50%;
-  border-radius:  50%;
-  -webkit-border-radius:  50%;
-  -moz-border:  50%;
-  border-radius: : 50%;
+
   }
 }
 

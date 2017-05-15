@@ -1,6 +1,6 @@
 /*heeder styles*/
 
-h1 {
+/*h1 {
   font-size: 2em;
   font-style: italic;
 }
@@ -12,7 +12,7 @@ header {
 h3 {
   font-size: 1em
   font-style: italic;
-}
+}*/
 
 .imagesInPort {
   width: 20%;
@@ -24,7 +24,7 @@ h3 {
 
 }
 
-#nav-list a {
+/*#nav-list a {
   text-decoration: none;
 }
 
@@ -47,4 +47,4 @@ h3 {
 #title {
   margin: 10px;
   font-size: 2em;
-}
+}*/
