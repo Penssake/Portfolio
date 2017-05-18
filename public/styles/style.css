@@ -1,6 +1,6 @@
 /*heeder styles*/
 
-h1 {
+/*h1 {
   font-size: 2em;
   font-style: italic;
 }
@@ -12,9 +12,24 @@ header {
 h3 {
   font-size: 1em
   font-style: italic;
+}*/
+
+.imagesInPort {
+  width: 100%;
+  height: 100%;
+  border-radius: 20%;
+  margin-top: 10px;
 }
 
-#nav-list a {
+#sliderPort {
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10%;
+  margin-bottom: 10%;
+}
+
+/*#nav-list a {
   text-decoration: none;
 }
 
@@ -33,3 +48,8 @@ h3 {
 #contactList {
   background-color: #96858F;
 }
+
+#title {
+  margin: 10px;
+  font-size: 2em;
+}*/

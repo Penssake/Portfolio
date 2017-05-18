@@ -1,5 +1,5 @@
 /*header styles*/
-h1 {
+/*h1 {
   max-width: 40%;
   display: block;
   padding-top: 120px;
@@ -18,7 +18,7 @@ h3 {
   max-width: 40%;
   display: block;
   padding-top: 10px;
-}
+}*/
 
 /*image styles*/
 #headshot {
@@ -37,11 +37,11 @@ h3 {
 
 #hamburger {
   font-size: 2em;
-}
+}*/
 
 /*body styles*/
 
-body {
+/*body {
   background-color: #DEFFDD;
 }
 
@@ -49,3 +49,11 @@ body {
   font-size: 1em;
   font-style: italic;
 }
+
+#body{
+  text-align: left;
+  width: 50%;
+  margin-left: 10px;
+}*/
+
+/*#title*/
