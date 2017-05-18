@@ -3,7 +3,8 @@
 ### Professional portfolio to showcase projects.
 
 ### Heroku
-//In progress
+//In progress//Not Displaying GitHub repos currently
+
 https://portfolio-display.herokuapp.com/
 
 
