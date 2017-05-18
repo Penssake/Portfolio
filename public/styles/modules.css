@@ -1,24 +1,24 @@
 1/*For desktop*/
 
-@media all and (max-width: 500px) {
-  #nav-list {
+@media all and (min-width: 500px) {
+  #nav-list li {
     display: none;
   }
 }
 
 /*For Mobile*/
 
-@media all and (min-width: 500px) {
+@media all and (max-width: 500px) {
   #hamburger {
     display: none;
   } #nav-list li {
-  /*width: 100%;
+  width: 100%;
   text-align: center;
   font-size: 1.3em;
   padding: 20px;
   display: inline-block;
   margin-top: 10px;
-  margin-left: 10px;*/
+  margin-left: 10px;
 
   }
 }
