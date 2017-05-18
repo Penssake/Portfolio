@@ -1,26 +1,5 @@
-/*header styles*/
-/*h1 {
-  max-width: 40%;
-  display: block;
-  padding-top: 120px;
-}
+/*header*/
 
-#header-1 {
-  margin-top: 20px;
-  display: block;
-}
-
-#header-2 {
-  display: block;
-}
-
-h3 {
-  max-width: 40%;
-  display: block;
-  padding-top: 10px;
-}*/
-
-/*image styles*/
 #headshot {
   max-width: 10%;
   border-radius: 50%;
@@ -37,23 +16,10 @@ h3 {
 
 #hamburger {
   font-size: 2em;
-}*/
+}
 
 /*body styles*/
 
-/*body {
-  background-color: #DEFFDD;
+main {
+  padding-top: 10%;
 }
-
-#bio {
-  font-size: 1em;
-  font-style: italic;
-}
-
-#body{
-  text-align: left;
-  width: 50%;
-  margin-left: 10px;
-}*/
-
-/*#title*/

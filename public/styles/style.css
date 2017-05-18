@@ -1,18 +1,3 @@
-/*heeder styles*/
-
-/*h1 {
-  font-size: 2em;
-  font-style: italic;
-}
-
-header {
-  background-color: #F4F4F4;
-}
-
-h3 {
-  font-size: 1em
-  font-style: italic;
-}*/
 
 .imagesInPort {
   width: 100%;
@@ -20,16 +5,17 @@ h3 {
   border-radius: 20%;
   margin-top: 10px;
 }
+/* slider in progress - want to write my own */
 
 #sliderPort {
-  width: 70%;
+  width: 40%;
   margin-left: auto;
   margin-right: auto;
   margin-top: 10%;
   margin-bottom: 10%;
 }
 
-/*#nav-list a {
+#nav-list a {
   text-decoration: none;
 }
 
@@ -49,7 +35,42 @@ h3 {
   background-color: #96858F;
 }
 
-#title {
-  margin: 10px;
-  font-size: 2em;
-}*/
+/* general mane styling across all sections - need to figure out how to style repo list? */
+
+ h3 {
+  font-size: 20px;
+  font-weight: 400;
+}
+
+button a {
+  text-decoration: none;
+  font-family: sans-serif;
+  color: #6a026e;
+  font-weight: bolder;
+}
+/*who knew buttons were text?? */
+
+.buttonDiv {
+    text-align: center;
+}
+
+button {
+    width: 10em;
+}
+
+#universeImg {
+  width: 50%;
+  height: 50%;
+  border-radius: 20%;
+  margin-top: 10px;
+}
+
+#about {
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+}
+
+p {
+  padding: 15px;
+}

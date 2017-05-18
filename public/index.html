@@ -30,6 +30,12 @@
       </li>
     </script>
 
+    <script id="todo-template" type="text/x-handlebars-template">
+      <div class="todo">
+        <h3 id="title">{{title}}</h3>
+        <p id="body">{{body}}</p>
+
+      </script>
   </head>
 
   <body>
@@ -47,7 +53,8 @@
     <section id="header-3">
       <ul id="nav-list">
         <li id="aboutList"><a href="#about">About</a></li>
-        <li id="portfolioList"><a href="#portfolio">Portfolio</a></li>        <li id="illustrationList"><a href="#illustrations">Illustrations & Paintings</a></li>
+        <li id="portfolioList"><a href="#portfolio">GitHub Portfolio</a></li>
+        <li id="illustrationList"><a href="#illustrations">Illustrations & Paintings</a></li>
         <li id="contactList"><a href="#contact">Contact</a></li>
       </ul>
     </section>
@@ -55,19 +62,26 @@
     <section id="hamburgerClick"><i id="hamburger" class="fa fa-bars" aria-hidden="true"></i></section>
 
     <main class="main">
+
       <section id="about"></section>
+      <section id="aboutTwo"></section>
       <section id="portfolio"></section>
       <section id="illustrations">
-      <div id="sliderPort">
-        <img class ="imagesInPort" src="./images/abstraction.jpeg"/>
-        <img class ="imagesInPort" src="./images/forrestFire.jpg"/>
-        <img class ="imagesInPort" src="./images/potfolio.png"/>
-      </div>
+        <div id="sliderPort">
+          <img class ="imagesInPort" src="./images/abstraction.jpeg"/>
+          <img class ="imagesInPort" src="./images/forrestFire.jpg"/>
+          <img class ="imagesInPort" src="./images/potfolio.png"/>
+        </div>
       </section>
-      <section id="contact"></section>
+      
+      <h3>Contact Christina</h3>
+      <img id="universeImg" src="./images/universe.png" />
+
+      <section class="buttonDiv" id="contact">
+        <button><a href="mailto:penssake@gmail.com">Email</a></button>
+      </section>
 
     </main>
-
     <script src="server.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.4/handlebars.js"></script>
