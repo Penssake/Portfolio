@@ -15,13 +15,18 @@ h3 {
 }*/
 
 .imagesInPort {
-  width: 20%;
-  clear: right;
-  float: left;
-  margin-top: 30px;
-  margin-left: 20px;
+  width: 100%;
+  height: 100%;
   border-radius: 20%;
+  margin-top: 10px;
+}
 
+#sliderPort {
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10%;
+  margin-bottom: 10%;
 }
 
 /*#nav-list a {

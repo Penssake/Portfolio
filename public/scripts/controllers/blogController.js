@@ -1,8 +1,7 @@
 'use strict';
 
 (function(module) {
-  const blogController = {};
-  // blogController.index = function() {
-  //
-  // module.blogController = blogController;
+  $('#contactList').on('click', function() {
+    $('#contact').show().siblings().hide();
+  });
 })(window);

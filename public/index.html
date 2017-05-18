@@ -17,7 +17,7 @@
 
     </script>
 
-    <script id="repo-template" type="text/x-handlebars-template">
+    <!-- <script id="repo-template" type="text/x-handlebars-template">
       <li>
         <a href="{{html_url}}" target="_blank"><h3>{{name}}</h3></a>
         <p>Description: {{description}}</p>
@@ -28,7 +28,7 @@
         <p>{{watchers_count}} watching this repo</p>
         {{/if}}
       </li>
-    </script>
+    </script> -->
 
   </head>
 
@@ -49,23 +49,25 @@
         <li id="aboutList"><a href="#about">About</a></li>
         <li id="portfolioList"><a href="#portfolio">Portfolio</a></li>
         <li id="blogList"><a href="#blog">Blog</a></li>
+        <li id="illustrationList"><a href="#illustrations">Illustrations & Paintings</a></li>
         <li id="contactList"><a href="#contact">Contact</a></li>
       </ul>
     </section>
 
-    <main>
+    <section id="hamburgerClick"><i id="hamburger" class="fa fa-bars" aria-hidden="true"></i></section>
 
-      <section id="hamburgerClick"><i id="hamburger" class="fa fa-bars" aria-hidden="true"></i></section>
+    <main class="main">
       <section id="about"></section>
       <section id="portfolio"></section>
       <section id="blog"></section>
-      <section id="contact"></section>
-
-      <div class="overview">
+      <section id="illustrations">
+      <div id="sliderPort">
         <img class ="imagesInPort" src="./images/abstraction.jpeg"/>
         <img class ="imagesInPort" src="./images/forrestFire.jpg"/>
         <img class ="imagesInPort" src="./images/potfolio.png"/>
       </div>
+      </section>
+      <section id="contact"></section>
 
     </main>
 
@@ -83,6 +85,7 @@
     <script src="public/scripts/controllers/blogController.js"></script>
     <script src="public/scripts/controllers/contactController.js"></script>
     <script src="public/scripts/controllers/portfolioController.js"></script>
+    <script src="public/scripts/controllers/illustrationController.js"></script>
     <script src="public/scripts/controllers/routes.js"></script>
 
   </body>

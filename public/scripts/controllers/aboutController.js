@@ -1,6 +1,8 @@
 'use strict';
 
 (function(module) {
-  let aboutController = {};
-  
+  // let aboutController = {};
+  // $('#aboutList').on('click', function() {
+  //     $()
+  // })
 })(window);
