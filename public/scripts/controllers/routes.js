@@ -1,9 +1,8 @@
-'use strict';
-
-page('/', aboutController.index);
-page('/about', aboutController.index);
-page('/portfolio', portfolioController.index);
-page('/blog', blogController.index);
-page('/contact', contactController.index);
-
-page();
+// 'use strict';
+//
+// page('/about', aboutController.show);
+// page('/about', aboutController.show);
+// page('/portfolio', portfolioController.show);
+// page('/contact', contactController.show);
+//
+// page();

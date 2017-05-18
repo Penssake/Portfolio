@@ -1,7 +1,7 @@
 'use strict';
 
 (function(module) {
-  $('#aboutList').on('click', function() {
-    $('#about').show().siblings().hide();
+  $('#contactList').on('click', function() {
+    $('#contact').show().siblings().hide();
   });
 })(window);

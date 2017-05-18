@@ -1,8 +1,7 @@
 'use strict';
 
 (function(module) {
-  // let aboutController = {};
-  // $('#aboutList').on('click', function() {
-  //     $()
-  // })
+  $('#aboutList').on('click', function() {
+    $('#about').show().siblings().hide();
+  });
 })(window);
