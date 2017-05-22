@@ -2,7 +2,7 @@
 
 (function(module) {
 
-function About (todoData) {
+function AboutTwo (todoData) {
 Object.keys(todoData).forEach(key => this [key] = todoData[key]);
 }
 
