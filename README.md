@@ -3,7 +3,7 @@
 ### Professional portfolio to showcase projects.
 
 ### Heroku
-//In progress//Not Displaying GitHub repos currently
+//In progress//Installing virtual machine to run linux programs//Installing heroku rather than using deploy button//Moving .gitignore files into a .env file//Will display repos following installation//
 
 https://portfolio-display.herokuapp.com/
 
